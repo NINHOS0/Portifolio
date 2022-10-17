@@ -317,6 +317,7 @@ nav {
     }
     .p-about {
         text-align: center;
+        font-size: 14px;
     }
     .info-about {
         flex-direction: column;
@@ -324,16 +325,8 @@ nav {
     }
     .info-about>p {
         width: auto;
-    }
-
-    .p-about{
-        font-size: 12px;
-    }
-
-    .info-about>p{
         font-size: 14px;
     }
-
     .social-links{
         justify-content: center;
     }
@@ -372,13 +365,17 @@ nav {
     min-width: 125px;
     min-height: 125px;
     border-radius: 100%;
-    border: 5px solid var(--blue);
+    border: 3px solid var(--blue);
     margin-bottom: 10px;
     transition: ease 100ms;
 }
 
 .circle:hover{
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.circle>svg{
+    transition: ease 100ms;
 }
 
 .services-card > .desc{
@@ -412,9 +409,14 @@ nav {
         /* border: none; */
         min-width: 90px;
         min-height: 90px;
-        margin-right: 20px;
-        margin-bottom: 0px;
+        margin: 10px 20px;
     }
+
+    .circle>svg{
+        width: 50px;
+        height: 50px;
+    }
+
     .services-card > .desc{
         text-align: left;
         max-width: none;
